@@ -10,9 +10,9 @@ app = Flask(__name__, template_folder='Template')
 
 
 # Log uploadedfile to Firestore
-cred = credentials.Certificate(
-    "eyecoffe-1aed99524ef7.json")
-firebase_admin.initialize_app(cred)
+# cred = credentials.Certificate(
+#     "eyecoffe-1aed99524ef7.json")
+firebase_admin.initialize_app()
 db = firestore.client()
 eyecoffee_db = db.collection('eyecoffe')
 
@@ -43,4 +43,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8080)
