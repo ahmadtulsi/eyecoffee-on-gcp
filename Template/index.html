@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="We aim to help coffee farmers to fight difficult diseases">
+    <meta name="description" content="">
+    <title>EyeCoffee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/nicepage.css')}}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='styles/jquery-1.9.1.min.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='styles/nicepage.js')}}" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+  
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="EyeCoffee">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="https://website2157585.nicepage.io/index.html?version=92809c6d-7457-419a-a91a-0d872764c149" data-home-page-title="EyeCoffee" class="u-body u-custom-color-5 u-xl-mode"><header class="u-clearfix u-custom-color-3 u-header u-header" id="sec-634d"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('index') }}" style="padding: 10px 20px;">EyeCoffee</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('index') }}">EyeCoffee</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-c371">
+      <div class="u-container-style u-custom-color-3 u-group u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h1 class="u-custom-font u-font-montserrat u-text u-text-1">We aim to help coffee farmers to fight difficult diseases</h1>
+        </div>
+      </div>
+      <img class="u-expanded-height u-hidden-xs u-image u-image-default u-image-1" src="{{ url_for('static', filename='delightin-dee-Wn4JJsvO4qE-unsplash.jpg')}}" alt="" data-image-width="720" data-image-height="1080">
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-9e97">
+      <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-3 u-text-default u-text-1">Try EyeCoffee now!<br>
+      </p>
+      <p class="u-custom-font u-font-montserrat u-text u-text-default u-text-2">Capture your coffee leaf plant with your camera and upload it using this button below</p>
+      <main role="main" class="container">
+      <form class="p-3 text-center" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+                    <input id='fileupload' type="file" name="file" class="btn btn-default" hidden>
+                    <label for='fileupload' class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-font-montserrat u-hover-custom-color-4 u-radius-6 u-btn-1">Scan Your Coffee Plant Here</label>
+                    <img class="u-hidden-xs u-image u-image-default u-preserve-proportions u-image-1" src="{{ url_for('static', filename='arrow-right1.png')}}" alt="" data-image-width="512" data-image-height="512">
+                    <input id='submitfile' type="submit" value="Predict Image" class="btn btn-primary mt-3" hidden> 
+                    <label for='submitfile' class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-font-montserrat u-hover-custom-color-4 u-radius-50 u-btn-2">Predict image</label>
+      </form>
+      
+      </main>
+      
+      
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-379c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center u-custom-font u-font-montserrat u-text u-text-custom-color-3 u-text-default u-text-1">EyeCoffee able to predict 4 condition for your coffee plant&nbsp;including healthy condition<br>
+        </p>
+        <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-3 u-text-default u-text-2">Miner<br>
+        </p>
+        <div class="u-border-2 u-border-palette-5-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-3">
+          <span style="font-style: italic;">Leucoptera coffeella</span>&nbsp;or Coffee Leaf Miner, is an insect pest. ​As they feed, coffee leaf miner larvae leave pale yellow trails underneath the coffee leaf epidermis. The mining trails then turn into irregular brown spots on upper leaf surface. Physically bending the affected leaf will cause the epidermis to separate. Cocooned&nbsp;pupae are typically found on leaves on the lower third of the plant.
+        </p>
+        <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{ url_for('static', filename='bicho_mineiro2.jpg')}}" alt="" data-image-width="1920" data-image-height="1080">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="carousel_e7e0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-3 u-text-default u-text-1">Rust<br>
+        </p>
+        <div class="u-border-2 u-border-palette-5-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-2">Coffee Leaf Rust is originate from fungus named&nbsp;<i>Hemileia vastatrix.&nbsp;</i>Small, pale yellow spots on upper leaf surfaces followed by powdery orange-yellow lesions on the undersides of leaves; symptoms commonly develop on lower leaves of plant first and then spread; infected leaves drop from the plant and twigs and branches become defoliated
+        </p>
+        <img class="u-image u-image-default u-image-1" src="{{ url_for('static', filename='1.jpg')}}" alt="" data-image-width="738" data-image-height="579">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="carousel_fdff">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-font-montserrat u-text u-text-custom-color-3 u-text-default u-text-1">Red Spider Mite<br>
+        </p>
+        <div class="u-border-2 u-border-palette-5-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-custom-font u-font-montserrat u-text u-text-2"> The red spider mite,&nbsp;<i>Oligonychus coffeae&nbsp;</i>damage the undersides of leaves, but in severe infestation will occur on both leaf surfaces as well as on the stems and fruits. They suck the sap of plant tissues. Symptoms are usually clusters of yellow spots on the upper surface of leaves, which may also appear&nbsp;chlorotic. This gives the leaf a speckled or mottled appearance.
+        </p>
+        <img class="u-image u-image-default u-image-1" src="{{ url_for('static', filename='C10P26E2.jpg')}}" alt="" data-image-width="1920" data-image-height="1080">
+      </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-00e0"><div class="u-clearfix u-sheet u-sheet-1">        
+  </body>
+</html>
