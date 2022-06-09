@@ -1,10 +1,10 @@
 # Bangkit Capstone Project - EyeCoffee
 > Teams:
->   - Ahmad Avatar Tulsi (M2006F0632) - Machine Learning 
->   - Putri Widyawati (M2316F2769) - Machine Learning
->   - Welman Bramco Munthe (M7152H1655) - Machine Learning
->   - Ahmad Fauzie Fatahna (C7441W3043) - Cloud Computing
->   - Alfa De Gleyn Tekkay (C7014J1377) - Cloud Computing
+>   - Ahmad Avatar Tulsi    (M2006F0632) - Machine Learning 
+>   - Putri Widyawati       (M2316F2769) - Machine Learning
+>   - Welman Bramco Munthe  (M7152H1655) - Machine Learning
+>   - Ahmad Fauzie Fatahna  (C7441W3043) - Cloud Computing
+>   - Alfa De Gleyn Tekkay  (C7014J1377) - Cloud Computing
 
 ## How to replicate
 
@@ -12,5 +12,10 @@
 
 ```
 git clone <this repositories>
-
+git clone https://github.com/ahmadtulsi/eyecoffee-on-gcp.git
 ```
+
+2. Deploy your model inference on Heroku or GCP
+3. Put the url on model.py with variable MODEL_URL
+4. Run locally using Flask to check if there's an error
+5. Deploy it on Heroku or GCP
